@@ -47,6 +47,7 @@ Node *leave( Queue *queue ) {
         return NULL;
 
     Node *node = queue->front;
+    freeNode(node);
     queue->front = node->next;         // move queue front
     queue->size--;                     // decrease queue size
 

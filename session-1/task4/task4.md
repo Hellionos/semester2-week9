@@ -23,12 +23,13 @@ Node traversal operation
 
 Add code in `main()` to test the `join()` and `leave()` functions
 - sketch the modifications to the structure to predict the result 
+can't do that yet
 - test the output using the traversal operation to display the data structure
-- test with `valgrind` to ensure there are no memory leaks
+- test with `valgrind` to ensure there are no memory leaks - does leak initially. Added freenode to leave function and now no leaks.
 
 ## Design question
 
-Why have we made the choice of the first node as `front` and the last node as `back`?
+Why have we made the choice of the first node as `front` and the last node as `back`? For the `fun` of it? 
 - consider the `join()` and `leave()` operations required and the implementation
 - write out the modifications required to the data structures in each case
 - are they simpler, harder or the same complexity?

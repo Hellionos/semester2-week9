@@ -15,9 +15,15 @@ int main( void ) {
     // test join 
     // - use traverseI() to display the nodes
     // - which pointer do you pass to traverseI(): front or back?
+    join(queue,0);
+    join(queue,1);
+    join(queue,2);
+    traverseI(queue->front);
 
     // test leave 
     // - take care to free detached memory
+    leave(queue);
+    traverseI(queue->front);
 
     // free queue memory
     freeNodes( queue->front );
