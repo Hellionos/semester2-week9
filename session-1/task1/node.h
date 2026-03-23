@@ -6,6 +6,6 @@ void freeNode( Node *node );
 void freeNodes( Node *top );
 
 void traverseI( Node *start );
-void traverseW( Node *node );
+void traverseW( Node *start );
 void traverseR( Node *node );
 

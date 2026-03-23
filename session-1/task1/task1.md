@@ -27,12 +27,16 @@ Node: { Data *data, Node *next }
     - add a new node at the start of the list
     - add a node in the middle of the list
     - sketch how you have modified the data structure on paper 
+not going to be able to do that for now
+
 
 ### 3. Test with `valgrind`
 - recall that we can run the executable as `valgrind ./node` to see the report
 - we use a lot of `malloc`/`free`
 - do we have memory leaks?
+valgrind says there are zero errors and no leaks possible
 - comment out the `freeNodes()` function in `main()`, re-compile and test
+obviously there are now leaks when freenodes is commented out
 
 ### 4. Traversal
 - we use the iterative traversal function `traverseI()`
