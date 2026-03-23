@@ -33,5 +33,7 @@ Traversal operations are now a simple for-loop
 - Compare to the struct implementation in Task 1
     - Which parts are simpler?
     - Which are more complex?
-
+main files look very similar array based stack is slightly easier though
+node based is simpler when it comes to the stack by not needing to change alter the size of the stack outside of push and pull unlike array based but array based doesn't have an extra node file which is a significant improvement 
 - Which implementation would be preferred in general?
+array based seems to be better to me
