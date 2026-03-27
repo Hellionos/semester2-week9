@@ -24,6 +24,7 @@ int main( void ) {
 
     // traverse to print node data
     traversePre( tree->root );
+    traversePost( tree->root );
 
     // free memory
     deallocateTree( tree->root );

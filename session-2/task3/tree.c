@@ -64,7 +64,12 @@ void traversePre( Node *loc ) {
  */
 void traversePost( Node *loc ) {
     
-    // implement here
+    if( loc == NULL ) {
+        printf(" Node %d\n",loc->data->value);
+    } else {
+        traversePost( loc->child[0] );
+        traversePost( loc->child[1] );
+    }
 
     return;
 }
