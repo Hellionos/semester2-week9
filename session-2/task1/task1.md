@@ -22,7 +22,7 @@ List: { Node *head, int size }
 
 ### 3. Test with `valgrind`
 - do we have memory leaks?
-- if so, locate and fix them
+- if so, locate and fix them - actually managed to do so with free(list)
 - Hint: you can also compare to session 1 tasks, eg. the stack implementation
 
 ### 4. Implementation

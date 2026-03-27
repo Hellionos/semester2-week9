@@ -47,11 +47,15 @@ Node *removeNode( List *list, Node *loc ) {
     
     if( loc == NULL ) {             // head is special case
         removed = list->head;
+
         list->head = removed->next;
+        free(removed);
     }
     else {                          // other nodes
         removed = loc->next;
+
         loc->next = removed->next;
+        free(removed);
     }
     list->size--;                   // decrease List size
 
